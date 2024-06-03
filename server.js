@@ -2,7 +2,9 @@ const express = require('express');
 const dotenv = require('dotenv').config();
 
 const errorHandler = require("./middleware/errorHandler.js");
+const validateToken = require("./middleware/validateTokenHandler.js");
 const contactRoute = require("./routers/contactRoute.js");
+const userRouter = require("./routers/userRoute.js");
 
 const dbConnect = require("./config/dbConnect.js");
 
@@ -20,6 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.use("/api/contacts", contactRoute);
+app.use("/api/user", userRouter)
 app.use(errorHandler);
 
 app.listen(port, () => {

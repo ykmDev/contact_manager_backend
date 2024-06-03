@@ -14,8 +14,8 @@ In .env file, PORT = 3000
 Project will run in [http://localhost:3000](http://localhost:3000)
 
 # Installation
-* For handling exceptions: `npm i express-async-handler`
-* For Mongodb connection: `npm i mongoose`
+* For hashing password: `npm i bcrypt`
+* For jwt: `npm i jsonwebtoken`
 
 ## MongoDB 
 usernmae: ykmdev71
