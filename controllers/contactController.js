@@ -3,17 +3,17 @@ const Contact = require("../models/contactModel.js");
 /*
 @desc Get all contacts
 @route GET /api/contacts
-@access public
+@access private
 */
 const getContacts = asyncHander(async (req,res) => {
-  const contacts = await Contact.find();
+  const contacts = await Contact.find({ user_id: req.user.id });
     res.status(200).json(contacts);
 });
 
 /*
 @desc Register contacts
 @route POST /api/contacts
-@access public
+@access private
 */
 const createContact = asyncHander(async (req,res) => {
     console.log(req.body);
@@ -25,7 +25,8 @@ const createContact = asyncHander(async (req,res) => {
     const contact = await Contact.create({
       name,
       email,
-      phone
+      phone,
+      user_id: req.user.id
     });
     res.status(201).json(contact);
 })
@@ -33,7 +34,7 @@ const createContact = asyncHander(async (req,res) => {
 /*
 @desc Get Detail contact
 @route GET /api/contacts/:id
-@access public
+@access private
 */
 const detailContact = asyncHander(async (req,res) => {
     const id = req.params.id;
@@ -48,7 +49,7 @@ const detailContact = asyncHander(async (req,res) => {
 /*
 @desc Update Detail contact
 @route PUT /api/contacts/:id
-@access public
+@access private
 */
 const updateContact = asyncHander(async (req,res) => {
   const id = req.params.id;
@@ -57,6 +58,12 @@ const updateContact = asyncHander(async (req,res) => {
     res.status(404);
     throw new Error("Contact Not Found!");
   }
+
+  if (contact.user_id.toString() !== req.user.id) {
+    res.status(403);
+    throw new Error("User don't have permission to update other user contacts");
+  }
+
   const updateContact = await Contact.findByIdAndUpdate(
     id,
     req.body,
@@ -77,6 +84,12 @@ const deleteContact = asyncHander(async (req,res) => {
     res.status(404);
     throw new Error("Contact Not Found!");
   }
+
+  if (contact.user_id.toString() !== req.user.id) {
+    res.status(403);
+    throw new Error("User don't have permission to update other user contacts");
+  }
+
   const deleteContact = await Contact.findByIdAndDelete(id);
   res.status(200).json(deleteContact);
 });

@@ -1,0 +1,141 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "contact_manage_api",
+    "collectionId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+    "dateExported": "2024-06-03T22:01:05.455Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "11cfc466-7b60-40be-ac64-2271dd89ff49",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "delete contact",
+            "url": "http://localhost:3000/api/contacts/665e3a59a98b2c872864643b",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2024-06-03T22:00:02.319Z",
+            "modified": "2024-06-03T22:00:02.319Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidGVzdDA3IiwiZW1haWwiOiJ0ZXN0MDdAZ21haWwuY29tIiwiaWQiOiI2NjVlM2EzMmE5OGIyYzg3Mjg2NDY0MzYifSwiaWF0IjoxNzE3NDUxNzkxLCJleHAiOjE3MTc0NTI2OTF9.4WRO56NVRROXAgQE2ZWk12UX1ftsxLEwmJTCMfMKIsg"
+            }
+        },
+        {
+            "_id": "c49d50cb-cac0-4bfe-ae66-3192f6d28b76",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "update contact by user owner",
+            "url": "http://localhost:3000/api/contacts/665e3a52a98b2c8728646439",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-06-03T22:00:20.311Z",
+            "modified": "2024-06-03T22:00:20.311Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"name\": \"contact04_01\",\n   \"email\": \"contact04_01@gmail.com\",\n   \"phone\": \"09123456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidGVzdDA3IiwiZW1haWwiOiJ0ZXN0MDdAZ21haWwuY29tIiwiaWQiOiI2NjVlM2EzMmE5OGIyYzg3Mjg2NDY0MzYifSwiaWF0IjoxNzE3NDUxNDc4LCJleHAiOjE3MTc0NTIzNzh9.pJLzm3yMtxh66yR2_qyWTIBbwOiWoACGMIHD2zK5MGU"
+            }
+        },
+        {
+            "_id": "7917d924-76b2-4549-9abe-8710da3f580b",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "create contact",
+            "url": "http://localhost:3000/api/contacts/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-03T22:00:25.225Z",
+            "modified": "2024-06-03T22:00:25.225Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"contact05\",\n  \"email\": \"contact05@gmail.com\",\n  \"phone\": \"09123456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidGVzdDA3IiwiZW1haWwiOiJ0ZXN0MDdAZ21haWwuY29tIiwiaWQiOiI2NjVlM2EzMmE5OGIyYzg3Mjg2NDY0MzYifSwiaWF0IjoxNzE3NDUxMzI5LCJleHAiOjE3MTc0NTIyMjl9.v4VXQYUnOi1FYS0qjeQIM1i7Atorj2HK8CGv_9Ql-IM"
+            }
+        },
+        {
+            "_id": "db520a68-05ab-4176-8879-0080ec8a18b9",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "get all contact by related login user",
+            "url": "http://localhost:3000/api/contacts/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-06-03T22:00:29.310Z",
+            "modified": "2024-06-03T22:00:29.310Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidGVzdDA3IiwiZW1haWwiOiJ0ZXN0MDdAZ21haWwuY29tIiwiaWQiOiI2NjVlM2EzMmE5OGIyYzg3Mjg2NDY0MzYifSwiaWF0IjoxNzE3NDUxNzkxLCJleHAiOjE3MTc0NTI2OTF9.4WRO56NVRROXAgQE2ZWk12UX1ftsxLEwmJTCMfMKIsg"
+            }
+        },
+        {
+            "_id": "4884a23d-812a-4922-ad94-3ce0f47da0a5",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "user login",
+            "url": "http://localhost:3000/api/user/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-03T22:00:34.457Z",
+            "modified": "2024-06-03T22:00:34.457Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test07@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fd2b758c-9ae8-4561-9dc0-7b69ec8792d9",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "user register",
+            "url": "http://localhost:3000/api/user/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-03T22:00:38.784Z",
+            "modified": "2024-06-03T22:00:38.784Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test07\",\n  \"email\": \"test07@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f6281e5a-f257-4216-a73a-2a0248d23d19",
+            "colId": "8cca796f-f7ba-47b7-9f75-54f7eb1a264c",
+            "containerId": "",
+            "name": "current login user",
+            "url": "http://localhost:3000/api/user/current",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-06-03T22:00:43.449Z",
+            "modified": "2024-06-03T22:00:43.449Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidGVzdDA2IiwiZW1haWwiOiJ0ZXN0MDZAZ21haWwuY29tIiwiaWQiOiI2NjVlMzRhZmM0YTJlZGQ4MWYyZjE4NTMifSwiaWF0IjoxNzE3NDUwMTExLCJleHAiOjE3MTc0NTAxNzF9.H13iSTBZDVg8ozVbb5skHFmfOyTAWVcPhJUKt2MSYjM",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidGVzdDA2IiwiZW1haWwiOiJ0ZXN0MDZAZ21haWwuY29tIiwiaWQiOiI2NjVlMzRhZmM0YTJlZGQ4MWYyZjE4NTMifSwiaWF0IjoxNzE3NDUwMjMxLCJleHAiOjE3MTc0NTAyOTF9.eo9EVJDIzeH0Fn35qFzIxSvWzfx3lZf9xy4afL2kV5Mr"
+            }
+        }
+    ],
+    "ref": "Kg99bGqnOO6xpyyCQXpCwaIijEaqx61gMhaSlkRBtMSI31XZ5no-iUcMdSyM7CBZcHwjIzS326IkNDrSHoF2mw"
+}
