@@ -1,0 +1,7 @@
+module.exports = {
+    VALIDATION_ERROR: 404,
+    UNAUTHORIZED: 401,
+    FORBIDDEN: 402,
+    NOT_FOUND: 400,
+    SERVER_ERROR: 500
+}
